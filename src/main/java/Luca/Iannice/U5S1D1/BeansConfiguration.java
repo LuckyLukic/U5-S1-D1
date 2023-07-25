@@ -17,9 +17,16 @@ public class BeansConfiguration {
 	}
 	
 	@Bean
-	Pizza pizzaMargherita () {
+	Pizza pizzaMargheritaStandard () {
 		
-		return new Pizza("Margherita", Size.FAMILY, 20.00, 600, 34, 35);
+		return new Pizza("Margherita", Size.STANDARD, 10, 600, 34, 35);
+		
+	}
+	
+	@Bean
+	Pizza pizzaMargheritaFamily () {
+		
+		return new Pizza("Margherita", Size.FAMILY, 15, 800, 50, 50);
 		
 	}
 

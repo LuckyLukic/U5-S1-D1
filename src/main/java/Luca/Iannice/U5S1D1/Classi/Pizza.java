@@ -10,17 +10,18 @@ import lombok.Setter;
 public class Pizza extends Prodotti {
 	
 	private String nomePizza;
-	private String ingrediente1 = "pomodoro";
-	private String ingrediente2 = "mozzarella";	
+	private final String ingrediente1 = "pomodoro";
+	private final String ingrediente2 = "mozzarella";
 	private Size size;
 	
 	public Pizza (String _nomePizza, Size _size, double _prezzo, int _calorie, int _grassi, int _carboidrati) {
 		super (_prezzo, _calorie, _grassi, _carboidrati );
 		
 		this.nomePizza = _nomePizza;
-		this.size = _size;
+		this.size = _size;	
 		
 	}
+	
 	
 
 }
